@@ -44,9 +44,9 @@ const LandingPage = () => {
                         type="text"
                         name="waitingListEmails"
                         placeholder="Enter Your Email"
-                        className="bg-gray-100 w-[250px] md:w-[300px] h-10 pl-5 rounded-l-lg focus:outline-none text-xs md:text-sm focus:shadow-xl"
+                        className="bg-gray-100 w-[250px] md:w-[300px] h-10 pl-5 rounded-l-lg rounded-r-none focus:outline-none text-xs md:text-sm focus:shadow-xl"
                     />
-                    <input type="submit" className="bg-[#ff0000] text-white text-sm h-10 px-5 rounded-r-lg hover:cursor-pointer hover-visible:outline-none hover:bg-[#C21807] hover:shadow-2xl transition-colors duration-300" value="Join The Waitlist" />
+                    <input type="submit" className="bg-[#ff0000] text-white text-sm h-10 px-5 rounded-r-lg rounded-l-none hover:cursor-pointer hover-visible:outline-none hover:bg-[#C21807] hover:shadow-2xl transition-colors duration-300" value="Join The Waitlist" />
                 </form>
                 {errors.waitingListEmails && <span className="text-red-500 text-sm">{errors.waitingListEmails.message}</span>}
                 <div className="flex-grow"></div>
