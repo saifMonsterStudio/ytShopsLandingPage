@@ -28,10 +28,10 @@ const LandingPage = () => {
 
     return (
         <div className="flex flex-col  justify-between">
-            <div className="w-screen flex flex-col items-center mt-40 space-y-5 flex-grow h-[calc(100vh-19rem)]">
+            <div className="w-screen flex flex-col items-center mt-40 space-y-3 md:space-y-5 flex-grow h-[calc(100vh-19rem)]">
                 <img src={brandIcon} alt="YT Shops Brand Logo" className="w-12 md:w-16 lg:w-20" />
-                <h1 className="text-5xl font-semibold">YT Shops</h1>
-                <p>The First & Global Marketplace For Content Creators.</p>
+                <h1 className="text-3xl md:text-5xl font-semibold">YT Shops</h1>
+                <p className="text-xs md:text-sm">The First & Global Marketplace For Content Creators.</p>
                 <form onSubmit={handleSubmit(onSubmit)} className="flex flex-row items-center justify-center">
                     <input
                         {...register("waitingListEmails", {
@@ -44,7 +44,7 @@ const LandingPage = () => {
                         type="text"
                         name="waitingListEmails"
                         placeholder="Enter Your Email"
-                        className="bg-gray-100 w-[300px] h-10 pl-5 rounded-l-lg focus:outline-none text-sm focus:shadow-xl"
+                        className="bg-gray-100 w-[250px] md:w-[300px] h-10 pl-5 rounded-l-lg focus:outline-none text-xs md:text-sm focus:shadow-xl"
                     />
                     <input type="submit" className="bg-[#ff0000] text-white text-sm h-10 px-5 rounded-r-lg hover:cursor-pointer hover-visible:outline-none hover:bg-[#C21807] hover:shadow-2xl transition-colors duration-300" value="Join The Waitlist" />
                 </form>
